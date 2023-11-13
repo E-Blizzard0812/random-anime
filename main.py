@@ -1,16 +1,13 @@
 from random import choice
-command = input("Which command? ")
-
 def own():
-    userlist = input("Which series ? ")
-    userlist = userlist.split(",")
-    return choice(userlist)
+    return choice(input("Which series ? ").split(","))
 
 def generator():
     list =["Naruto", "Demon Slayer", "JoJo's Bizzare Adventure", "Jujutsu Kaisen", "One Piece", "Fate Series"]
     return choice(list)
 
 def main():
+    command = input("Which command? ")
     if command == "own":
         return own()
     elif command == "generator":
