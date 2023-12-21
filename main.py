@@ -1,4 +1,5 @@
 from random import choice
+import pandas 
 def own():
     return choice(input("Which series ? ").split(","))
 
